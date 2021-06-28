@@ -1,9 +1,9 @@
-package net.fabricmc.example;
+package net.fabricmc.end;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.example.blocks.FluorescentSaplingBlock;
-import net.fabricmc.example.blocks.FluorescentSaplingFlowerPotBlock;
-import net.fabricmc.example.generator.FluorescentSaplingGenerator;
+import net.fabricmc.end.blocks.FluorescentSaplingBlock;
+import net.fabricmc.end.blocks.FluorescentSaplingFlowerPotBlock;
+import net.fabricmc.end.generator.FluorescentSaplingGenerator;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -33,7 +33,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 
 
-public class ExampleMod implements ModInitializer {
+public class Main implements ModInitializer {
 	public static final Block LIME_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4F,0.4F).sounds(BlockSoundGroup.NETHERRACK).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block COBBLED_LIME_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(0.9F,0.9F).sounds(BlockSoundGroup.NETHER_GOLD_ORE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block SULFUR = new Block(FabricBlockSettings.of(Material.SOIL).strength(0.2F,0.2F).sounds(BlockSoundGroup.SNOW).breakByTool(FabricToolTags.SHOVELS));

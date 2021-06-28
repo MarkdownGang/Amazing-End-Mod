@@ -3,23 +3,27 @@
   "id": "end",
   "version": "${version}",
 
-  "name": "BLOCK/BIOMES/ITEMS/ARMOR",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "End Mod",
+  "description": "This is a mod. For minecraft. Of the end. The dimension.",
   "authors": [
-    "Me!"
+    "Me!",
+    "Not Me!",
+    "My nonexistent dog!",
+    "The usps guy that delivers mail!",
+    "what"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/MarkdownGang/Mediocre-Minecraft-Mod",
+    "sources": "https://github.com/MarkdownGang/Mediocre-Minecraft-Mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/end/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.end.Main"
     ]
   },
   "mixins": [
