@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+      "item": "end:cobbled_lime_stone"
+    },
+    "result": "end:lime_stone",
+    "experience": 0.35,
+    "cookingtime": 200
+  }
+  

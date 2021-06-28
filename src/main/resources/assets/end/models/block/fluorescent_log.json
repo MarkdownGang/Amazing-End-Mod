@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "minecraft:block/fluorescent_log_top",
+      "side": "end:block/fluorescent_log"
+    }
+  }

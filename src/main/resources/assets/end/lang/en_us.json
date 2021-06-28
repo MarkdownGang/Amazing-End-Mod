@@ -1,0 +1,12 @@
+{
+    "block.end.sulfur":"Sulfur",
+    "block.end.lime_stone":"Lime Stone",
+    "block.end.cobbled_lime_stone":"Cobbled Lime Stone",
+    "item.end.sulfur_dust":"Sulfur Dust",
+    "block.end.fluorescent_leaves":"Fluorescent Leaves",
+    "item.end.fluorescent_apple":"Fluorescent Apple",
+    "block.end.fluorescent_log":"Fluorescent Log",
+    "block.end.fluorescent_sapling":"Fluorescent Sapling",
+    "block.end.potted_fluorescent_sapling": "Potted Fluorescent Sapling",
+    "block.end.polished_lime_stone":"Polished Lime Stone"
+}

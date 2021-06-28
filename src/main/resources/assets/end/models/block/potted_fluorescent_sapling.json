@@ -1,0 +1,7 @@
+  
+{
+    "parent": "minecraft:block/flower_pot_cross",
+    "textures": {
+      "plant": "end:block/fluorescent_sapling"
+    }
+  }
