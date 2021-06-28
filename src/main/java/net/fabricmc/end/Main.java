@@ -31,7 +31,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 
 
-
+//new blocks and items and stuff
 
 public class Main implements ModInitializer {
 	public static final Block LIME_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4F,0.4F).sounds(BlockSoundGroup.NETHERRACK).breakByTool(FabricToolTags.PICKAXES).requiresTool());
@@ -42,18 +42,18 @@ public class Main implements ModInitializer {
 	public static final Item FLUORESCENT_APPLE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(FoodComponents.FLUORESCENT_APPLE));
 	public static final Block FLUORESCENT_LOG = new Block(FabricBlockSettings.of(Material.WOOD).strength(2F,2F).luminance(13).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES));
 	public static final Block POLISHED_LIME_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F,6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
-	
+
 
 
 	public static final Block FLUORESCENT_SAPLING = new FluorescentSaplingBlock(new FluorescentSaplingGenerator(), AbstractBlock.Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS));
-    public static final Block POTTED_FLUORESCENT_SAPLING = new FluorescentSaplingFlowerPotBlock(FLUORESCENT_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+  public static final Block POTTED_FLUORESCENT_SAPLING = new FluorescentSaplingFlowerPotBlock(FLUORESCENT_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
 
 	public static final ConfiguredFeature<TreeFeatureConfig, ?> FLUORESCENT_TREE = registerConfiguredFeature("end_fluorescent_tree", Feature.TREE.configure((new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(FLUORESCENT_LOG.getDefaultState()), new StraightTrunkPlacer(4, 2, 0), new SimpleBlockStateProvider(FLUORESCENT_LEAVES.getDefaultState()), new SimpleBlockStateProvider(FLUORESCENT_SAPLING.getDefaultState()), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3), new TwoLayersFeatureSize(1, 0, 1))).ignoreVines().build()));
 
 
 	@Override
 	public void onInitialize() {
-		
+
 		//together
 
 		Registry.register(Registry.BLOCK, new Identifier("end", "lime_stone"), LIME_STONE);
@@ -62,13 +62,13 @@ public class Main implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("end", "cobbled_lime_stone"), new BlockItem(COBBLED_LIME_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.BLOCK, new Identifier("end", "polished_lime_stone"), POLISHED_LIME_STONE);
 		Registry.register(Registry.ITEM, new Identifier("end", "polished_lime_stone"), new BlockItem(POLISHED_LIME_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-		
+
 		//together
 
 		Registry.register(Registry.BLOCK, new Identifier("end", "sulfur"), SULFUR);
 		Registry.register(Registry.ITEM, new Identifier("end", "sulfur"), new BlockItem(SULFUR, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.ITEM, new Identifier("end", "sulfur_dust"), SULFUR_DUST);
-	
+
 		//together
 
 		Registry.register(Registry.BLOCK, new Identifier("end", "fluorescent_leaves"), FLUORESCENT_LEAVES);
@@ -76,7 +76,7 @@ public class Main implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("end", "fluorescent_apple"),FLUORESCENT_APPLE);
 		Registry.register(Registry.BLOCK, new Identifier("end", "fluorescent_log"), FLUORESCENT_LOG);
 		Registry.register(Registry.ITEM, new Identifier("end", "fluorescent_log"), new BlockItem(FLUORESCENT_LOG, new Item.Settings().group(ItemGroup.DECORATIONS)));
-		
+
 		//together
 
 
@@ -91,14 +91,14 @@ public class Main implements ModInitializer {
 
         Registry.register(Registry.ITEM, new Identifier("end", "fluorescent_sapling"), new BlockItem(FLUORESCENT_SAPLING, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 
-		
-	
 
 
 
 
 
-		
+
+
+
 	}
 	private static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> registerConfiguredFeature(String id, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, id, configuredFeature);
